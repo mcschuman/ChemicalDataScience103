@@ -17,10 +17,10 @@ def bond_distance(coords, i, j):
     return np.linalg.norm(coords[i] - coords[j])
 
 # Example:
-atoms, coords = read_coordinates(r"C:\Users\jschoer\Desktop\DSA103 Coding and Tests\DSA103\exercises\lectures_11-12\yne.gjf")
+atoms, coords = read_coordinates(r"lectures\session14\materials\yne.xyz")
 print("Atoms:", atoms)
 print("Coordinates:", coords)
 
-# Compute distance between atom 0 and 1
+# Compute distance between atom 0 and 1 (in that case the two oxygens, see list of atoms)
 d = bond_distance(coords, 0, 1)
 print(f"Distance between {atoms[0]}-{atoms[1]}: {d:.3f} Å")
