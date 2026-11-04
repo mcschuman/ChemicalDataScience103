@@ -10,20 +10,20 @@ ROOT = Path(__file__).resolve().parents[0]
 DATA = ROOT/"data"
 
 # Load your ChEMBL dataset
-chembl_df = pd.read_csv(DATA / "filename.csv")  # use your actual filename and path
+chembl_df = pd.read_csv(DATA / "mics_raw.csv")  # use your actual filename and path
 smiles_list = chembl_df["smiles"].dropna().tolist() # use the column tag with the "smiles"
 
 records = []
 
 for smi in tqdm(smiles_list):  # limit to 200 compounds for testing, tqdm just adds progress bar
     try:
-        compounds = pcp.get_compounds(smi, namespace='smiles') # look for each smiles-code in the list sliced from the ChEMBL data
+        compounds = pcp.get_compounds(smi, namespace='canonical_smiles') # look for each smiles-code in the list sliced from the ChEMBL data
         if not compounds:
             continue
         
         c = compounds[0]
         records.append({
-            "smiles": smi, # make sure that the column name for the smiles code matches the chembl dataframe!
+            "canonical_smiles": smi, # make sure that the column name for the smiles code matches the chembl dataframe!
             "CID": c.cid,
             "MolecularWeight": c.molecular_weight,
             "XLogP": c.xlogp,
