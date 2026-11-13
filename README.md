@@ -56,11 +56,11 @@ Lecture slot:
 17) Putting it together: Small project introduction, homework Q&A
 18) Putting it together: Small project work, homework recap session16 (homework session16 due by 7:59 am; homework assignment small projects DUE SESSION 24)
 19) Lies, damn lies, and statistics, in class exercises
-20) Data visualization: Honest vs. dishonest, useful vs. obfuscating (homework assignment session18)
+20) Data visualization: Honest vs. dishonest, useful vs. obfuscating (homework assignment session20)
 21) Data visualization continued, homework Q&A
-22) Homework recap session18, Q&A, intro to HPC (homework session18 due by 7:59 am; homework assignment session20)
+22) Homework recap session18, Q&A, intro to HPC (homework session20 due by 7:59 am; homework assignment session22)
 23) Outlook: Machine learning, homework Q&A
-24) Homework recap session20, putting it together: Small project finalization and submission (homework session20 due by 7:59 am; small projects due by 23:59)
+24) Homework recap session20, putting it together: Small project finalization and submission (homework session22 due by 7:59 am; small projects due by 23:59)
 25) Outlook: Vibe coding and agentic coding, preparation for mock exam
 26) Mock exam
 27) Mock exam recap and Q&A, bidirectional feedback round
