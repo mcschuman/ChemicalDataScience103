@@ -20,6 +20,8 @@ dependencies = [
     "seaborn>=0.13.2",
     "pubchempy>=1.0.5",
     "ord-schema>=0.3.99",
+    "streamlit>=1.67.0",
+    "plotly>=7.2.0",
 ]
 
 [tool.uv]
