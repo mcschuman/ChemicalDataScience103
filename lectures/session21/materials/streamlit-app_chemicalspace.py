@@ -1,4 +1,4 @@
-
+# generated code (Gemini), treat with caution
 
 from io import BytesIO
 
@@ -134,16 +134,16 @@ else:
         value=float(default_perp),
         step=1.0,
     )
-    learning_rate = st.sidebar.select_slider(
-        "t-SNE Learning Rate",
-        options=[50.0, 100.0, 200.0, 500.0, "auto"],
-        value=200.0,
-    )
+    # learning_rate = st.sidebar.select_slider(
+    #     "t-SNE Learning Rate",
+    #     options=[50.0, 100.0, 200.0, 500.0, "auto"],
+    #     value=200.0,
+    # )
     tsne_seed = st.sidebar.number_input("Random State", min_value=0, value=42, step=1)
     coords = TSNE(
         n_components=2,
         perplexity=perplexity,
-        learning_rate=learning_rate,
+        # learning_rate=learning_rate,
         init="pca",
         random_state=int(tsne_seed),
     ).fit_transform(fp_matrix)
@@ -278,7 +278,7 @@ def render_plot_and_inspector(
                 st.rerun(scope="fragment")
 
     with mol_col:
-        st.subheader("🔬 Structure Inspector")
+        st.subheader("Structure Inspector")
         chosen_idx = st.selectbox(
             "Click a point or pick a molecule",
             options=option_indices,
